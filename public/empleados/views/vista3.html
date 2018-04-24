@@ -1,0 +1,54 @@
+
+<center><h2>Listado de empleados</h2></center>
+
+<!--
+<div ng-repeat="tarea in ctl.tareas">
+  <ng-tarea></ng-tarea>
+</div>
+
+<br>
+-->
+
+
+<center><h3></h3></center>
+<table >
+              <theader>
+                  <b><th>Nombre</th></b>
+                  <b><th>apellido</th></b>
+                  <b><th>edad</th></b>
+                  <b><th>telefono</th></b>
+                  <b><th>estadoCivil</th></b>
+                  <b><th>ccp</th></b>
+                  <b><th>sexo</th></b>
+                  <b><th>nss</th></b> 
+                  <b><th>direccion</th></b>
+                  <b><th>puesto</th></b>
+                  <b><th>calificacion</th></b>
+                 
+                  <b><th>Acción</th></b>
+                  
+              </theader>
+          <tbody>
+              <tr ng-repeat="c in ctl.empleados" >
+                    <td><a title="Detalles" href="#!/empleado/{{c._id}}" >{{c.nombre}}</a> </td>
+                    <td>{{c.apellido}}</td>
+                    <td>{{c.edad}}</td>
+                    <td>{{c.telefono}}</td>
+                    <td>{{c.estadoCivil}}</td>
+                    <td>{{c.ccp}}</td>
+                    <td>{{c.sexo}}</td>
+                    <td>{{c.nss}}</td>
+                    <td>{{c.direccion}}</td>
+                    <td>{{c.puesto}}</td>
+                    <td>{{c.calificacion}}</td>
+
+
+                  
+                   
+                    <td> <button class="btn btn-danger btn-sm" type="button"  ng-click="ctl.selectEmpleado(c)">Eliminar</button> </td>  
+                    
+              </tr>
+              
+          </tbody>
+</table>
+      
